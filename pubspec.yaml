@@ -1,0 +1,45 @@
+name: futuremo_app
+description: "A new Flutter project for group expense management with Firebase."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^2.24.0
+  cloud_firestore: ^4.14.0
+  firebase_messaging: ^14.6.0
+
+  # State Management & Utils
+  shared_preferences: ^2.2.2
+  url_launcher: ^6.1.14
+
+  # UI
+  google_fonts: ^6.1.0
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/
+    
+  fonts:
+    - family: PlusJakartaSans
+      fonts:
+        - asset: assets/fonts/PlusJakartaSans-Regular.ttf
+        - asset: assets/fonts/PlusJakartaSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/PlusJakartaSans-SemiBold.ttf
+          weight: 600
